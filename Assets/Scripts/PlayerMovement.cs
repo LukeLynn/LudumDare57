@@ -8,6 +8,11 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D body;
 
     public float speed;
+    public float drag;
+
+    public bool grounded;
+
+    public b
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,4 +41,32 @@ public class PlayerMovement : MonoBehaviour
         //Vector2 direction = new Vector2(xInput, yInput).normalized;
         //body.linearVelocity = direction * speed;
     }
+
+
+    private void FixedUpdate()
+    {
+        CheckGround();
+
+        if (grounded)
+        {
+            body.linearVelocity *= drag;
+        }
+    }
+
+
+    void CheckGround()
+    {
+
+    }
+
+
+
+
+
+
+
+
+
 }
+
+
