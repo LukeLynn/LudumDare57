@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Platform-Envy_0: 7247117653052971884
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
